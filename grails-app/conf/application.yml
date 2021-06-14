@@ -1,5 +1,14 @@
 ---
 grails:
+    plugin:
+        springsecurity:
+            rest:
+                token:
+                    storage:
+                        jwt:
+                            secret: 'capinfoEA-atlease256bits(The secret length must be at least 256 bits)'
+---
+grails:
     profile: web
     codegen:
         defaultPackage: dnunesspringsecurityquestion
